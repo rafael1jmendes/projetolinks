@@ -9,6 +9,17 @@ body {
 
     background: url(./links/assets/bg-mobile.jpg) no-repeat top center/cover; 
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
 
 #container { 
     width: 360px;
@@ -25,6 +36,11 @@ body {
 #profile img {
     
     width: 112px;
-    border-radius: 60px;
+    border-radius: 80px;
 
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
 }
