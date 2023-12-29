@@ -7,7 +7,7 @@ body {
 
     */
 
-    background: url(./links/assets/bg-mobile.jpg) no-repeat top center/cover; 
+    background: var(--bg-url) no-repeat top center/cover; 
 }
 * {
     margin: 0;
@@ -16,9 +16,18 @@ body {
 
 }
 
+:root{
+    --text-color: white;
+    --bg-url: url(./links/assets/bg-mobile.jpg);
+}
+.light {
+    --text-color: black;
+    --bg-url: url(./links/assets/bg-mobile-light.jpg);
+}
+
 body * {
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 #container { 
@@ -84,7 +93,7 @@ ul li a {
 /*pseudo-selecto*/
 ul li a:hover {
     background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid white;
+    border: 1.5px solid var(--text-color);
 }
 
 /*social links */
