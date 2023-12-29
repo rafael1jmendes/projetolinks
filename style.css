@@ -8,6 +8,7 @@ body {
     */
 
     background: var(--bg-url) no-repeat top center/cover; 
+    height: 100%;
 }
 * {
     margin: 0;
@@ -202,5 +203,15 @@ footer{
     }
     to {
         left: 0;
+    }
+}
+
+/* media queries */
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./links/assets/bg-desktop.jpg);
+    }
+    .light {
+        --bg-url: url(./links/assets/bg-desktop-light.jpg);
     }
 }
